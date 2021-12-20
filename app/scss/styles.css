@@ -1,0 +1,136 @@
+.header nav {
+  padding: 74px 152px;
+}
+
+.header__logo img {
+  width: 7.5rem;
+}
+
+.header__hambugger > span {
+  width: 2.1875rem;
+  height: 0.2125rem;
+  background: #242d52;
+  display: block;
+}
+
+.header__hambugger > span:not(:last-child) {
+  margin-bottom: 0.1875rem;
+}
+
+.header__links a {
+  font-size: 0.85rem;
+  color: #242d52;
+  font-weight: 600;
+  position: relative;
+}
+
+.header__links a:not(:last-child) {
+  margin-right: 1.25rem;
+}
+
+.header__links a::before {
+  content: '';
+  display: block;
+  position: absolute;
+  background: red;
+  height: 5px;
+  left: 0;
+  right: 0;
+  bottom: -35px;
+  opacity: 0;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+}
+
+.header__links a:hover {
+  color: #9095a7;
+  -webkit-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+}
+
+.header__links a:hover::before {
+  opacity: 1;
+}
+
+.header__cta {
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+}
+
+.header__cta:hover {
+  opacity: 0.75;
+}
+
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Public Sans', sans-serif;
+  line-height: 1.3;
+  font-size: 1rem;
+  color: #242d52;
+  font-weight: 300;
+}
+
+a, a:visited, a:hover {
+  text-decoration: none;
+}
+
+.button {
+  border: 0;
+  outline: 0;
+  border-radius: 50px;
+  cursor: pointer;
+  background: #f25f3a;
+  color: #ffffff;
+  font-size: 0.875rem;
+  padding: 0.875rem 2.285rem;
+  font-weight: 600;
+}
+
+@media (max-width: 63.9375em) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 64em) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=styles.css.map */
