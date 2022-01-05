@@ -197,9 +197,9 @@
             height: 3rem;
 
             @include breakpoint-up(large){
-                max-width: 1440px;
-                
-                width: 15vw;
+                max-width: 1440px;   
+                width: 11vw;
+                border: none;
             }
 
        

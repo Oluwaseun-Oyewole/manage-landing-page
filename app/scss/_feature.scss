@@ -1,10 +1,40 @@
 .features{
     // margin: 0px -1.4rem 0px -1rem;
-    padding-left: 1rem;
+    margin-top: 8rem;
+    padding-left: 3rem;
+    position: relative;
 
-   &__wrapper{
-       
-    @include breakpoint-up(large){
+    @include breakpoint-up(medium){
+        margin-top: -2rem;
+    }
+
+
+ 
+        
+        @include breakpoint-up(medium){
+            &::before{
+                content: "";
+                position: absolute;
+                background: url(/images/bg-tablet-pattern.svg);
+                background-repeat: no-repeat;
+                background-position: top 25rem  left -33rem;
+                // background-position: top center;
+                // left: 55%;
+                background-size: 135%;
+                width: 50%;
+                width:40rem;
+                height: 100rem;
+                z-index: -1;
+                left:0%;
+                top: 10%;
+            }
+        }
+        
+
+
+
+   &__wrapper{       
+    @include breakpoint-up(medium){
         display: flex;
         justify-content: center;
         padding:10rem 6rem 0 6rem;
@@ -15,7 +45,7 @@
 
    &__list{
 
-    @include breakpoint-up(large){
+    @include breakpoint-up(medium){
         flex: 1;
         // padding-left: 7rem;
     }
@@ -26,9 +56,10 @@
     &__text{
         text-align: center;
         padding-bottom: 3rem;
+        padding-right: 3rem;
 
 
-        @include breakpoint-up(large){
+        @include breakpoint-up(medium){
            margin-top: -2rem;
         }
 
@@ -36,7 +67,7 @@
         h1{
             font-size: 2rem;
 
-            @include breakpoint-up(large){
+            @include breakpoint-up(medium){
                 font-size: 41px;
             }
 
@@ -49,13 +80,13 @@
             line-height: 1.7;
             color: $darkGrayishBlue;
 
-            @include breakpoint-up(large){
+            @include breakpoint-up(medium){
                 width: 70%;
                 font-size: 17px;
             }
         }
 
-        @include breakpoint-up(large){
+        @include breakpoint-up(medium){
             flex: 1;
             text-align: left;
         }
@@ -78,7 +109,7 @@
             margin: 0;
            }
 
-           @include breakpoint-up(large){
+           @include breakpoint-up(medium){
                background: transparent;
                align-items: center;
            }
@@ -98,7 +129,7 @@
             color: #fafafa;
 
 
-            @include breakpoint-up(large){
+            @include breakpoint-up(medium){
 
                 width: 5rem;
                 height: 2.5rem;
@@ -120,12 +151,12 @@
            .benefit{
             margin-left: 1rem;
             font-size: 14px;
-            background: #fff0ec;
 
             
-            @include breakpoint-up(large){
+            @include breakpoint-up(medium){
                 margin-left: 2rem;
-                font-size: 17px;
+                font-size: 19px;
+                margin-bottom: 2rem;
             }
 
            }
@@ -138,7 +169,7 @@
             line-height: 1.8;
 
 
-            @include breakpoint-up(large){
+            @include breakpoint-up(medium){
                 font-size: 17px;
                 margin-left: 7rem;
                 margin-top: -0.5rem;
