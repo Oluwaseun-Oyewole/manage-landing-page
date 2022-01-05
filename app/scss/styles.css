@@ -253,7 +253,6 @@ body {
   margin: 0 auto;
   -webkit-box-shadow: 0px 0px 5px 4px #ccc;
           box-shadow: 0px 0px 5px 4px #ccc;
-  position: relative;
 }
 
 body::before {
@@ -290,6 +289,7 @@ body::before {
   body {
     max-width: 1440px;
     margin: 0 auto;
+    position: relative;
   }
 }
 
@@ -1000,6 +1000,7 @@ a, a:visited, a:hover {
 }
 
 .footer {
+  overflow: hidden;
   background: #1d1e25;
   color: #ffffff;
   display: -ms-grid;
@@ -1202,7 +1203,6 @@ a, a:visited, a:hover {
 }
 
 .footer__cta .input {
-  border: 1px red solid;
   outline: none;
   border-radius: 2.5rem;
   padding-left: 0.5rem;
@@ -1213,6 +1213,7 @@ a, a:visited, a:hover {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  border: none;
   width: 67vw;
   height: 3rem;
 }

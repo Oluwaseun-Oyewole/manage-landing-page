@@ -1,4 +1,6 @@
 .footer{
+
+    overflow: hidden;
         background: $veryDarkBlue;
         color:$white;
         
@@ -182,7 +184,7 @@
         }
 
         .input{
-            border:1px red solid;
+            // border:1px red solid;
             outline: none;
             border-radius: 2.5rem;
             padding-left: 0.5rem;
@@ -191,6 +193,7 @@
             border-width: 2px;
             border-style: solid;
             align-self: center;
+            border:none;
 
 
             width: 67vw;
