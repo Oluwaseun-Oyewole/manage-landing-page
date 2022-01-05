@@ -131,8 +131,8 @@
         background-size: 90%;
         background-repeat: no-repeat;
         width: 100%;
-        background-position: top 1rem center;
-        margin-top:-2rem;
+        background-position: top 1.4rem center;
+        margin-top:-1rem;
 
         @include breakpoint-up(medium){
             order: 2;
