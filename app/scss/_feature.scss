@@ -6,11 +6,11 @@
 
     @include breakpoint-up(medium){
         margin-top: -2rem;
+        padding-left: 3rem;
+        padding-right:3rem;
     }
 
 
- 
-        
         @include breakpoint-up(medium){
             &::before{
                 content: "";
