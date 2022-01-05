@@ -268,6 +268,15 @@ body::before {
   z-index: -1;
 }
 
+@media (min-width: 40em) {
+  body::before {
+    width: 100%;
+    height: 33rem;
+    background-size: 60%;
+    z-index: -1;
+  }
+}
+
 @media (min-width: 64em) {
   body::before {
     height: 45rem;
@@ -323,6 +332,18 @@ a, a:visited, a:hover {
 
 @media (max-width: 63.9375em) {
   .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 40em) {
+  .show-for-tablet {
+    display: block;
+  }
+}
+
+@media (min-width: 40em) {
+  .hide-for-tablet {
     display: none;
   }
 }
@@ -391,11 +412,26 @@ a, a:visited, a:hover {
   }
 }
 
+@media (min-width: 64em) {
+  .hero::after {
+    display: none;
+  }
+}
+
 .hero__wrapper {
   position: relative;
 }
 
 @media (min-width: 40em) {
+  .hero__wrapper {
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 64em) {
   .hero__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -422,12 +458,26 @@ a, a:visited, a:hover {
   }
 }
 
+@media (min-width: 64em) {
+  .hero__text {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
 .hero__text h1 {
   text-align: center;
   font-size: 35px;
 }
 
 @media (min-width: 40em) {
+  .hero__text h1 {
+    text-align: left;
+  }
+}
+
+@media (min-width: 64em) {
   .hero__text h1 {
     text-align: left;
     font-size: 3.5rem;
@@ -442,6 +492,13 @@ a, a:visited, a:hover {
 }
 
 @media (min-width: 40em) {
+  .hero__text p {
+    text-align: left;
+    width: 70%;
+  }
+}
+
+@media (min-width: 64em) {
   .hero__text p {
     text-align: left;
     margin-top: -1.5rem;
@@ -461,6 +518,12 @@ a, a:visited, a:hover {
   }
 }
 
+@media (min-width: 64em) {
+  .hero__cta {
+    text-align: left;
+  }
+}
+
 .hero__cta a {
   padding: 0.7rem 1.6rem;
   font-size: 10px;
@@ -468,7 +531,7 @@ a, a:visited, a:hover {
           box-shadow: 0px 12px 13px -10px #f25f3a;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 64em) {
   .hero__cta a {
     padding: 0.9rem 2.3rem;
     font-size: 15px;
@@ -490,6 +553,16 @@ a, a:visited, a:hover {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+    background-size: 85%;
+    background-position: top 3rem right 4rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .hero__image {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
     margin-top: 2rem;
     width: 140%;
     background-size: 85%;
@@ -507,13 +580,19 @@ a, a:visited, a:hover {
 
 @media (min-width: 40em) {
   .features {
+    padding-right: 3rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .features {
     margin-top: -2rem;
     padding-left: 3rem;
     padding-right: 3rem;
   }
 }
 
-@media (min-width: 40em) {
+@media (min-width: 64em) {
   .features::before {
     content: "";
     position: absolute;
@@ -530,7 +609,7 @@ a, a:visited, a:hover {
   }
 }
 
-@media (min-width: 40em) {
+@media (min-width: 64em) {
   .features__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -544,6 +623,16 @@ a, a:visited, a:hover {
 
 @media (min-width: 40em) {
   .features__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .features__list {
+    display: block;
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
@@ -556,7 +645,7 @@ a, a:visited, a:hover {
   padding-right: 3rem;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 64em) {
   .features__text {
     margin-top: -2rem;
   }
@@ -568,6 +657,13 @@ a, a:visited, a:hover {
 
 @media (min-width: 40em) {
   .features__text h1 {
+    padding: 0 5rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .features__text h1 {
+    padding: 0;
     font-size: 41px;
   }
 }
@@ -581,12 +677,19 @@ a, a:visited, a:hover {
 
 @media (min-width: 40em) {
   .features__text p {
+    padding: 0 4rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .features__text p {
+    padding: 0;
     width: 70%;
     font-size: 17px;
   }
 }
 
-@media (min-width: 40em) {
+@media (min-width: 64em) {
   .features__text {
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -615,7 +718,7 @@ a, a:visited, a:hover {
   margin: 0;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 64em) {
   .features__item .heading {
     background: transparent;
     -webkit-box-align: center;
@@ -637,7 +740,7 @@ a, a:visited, a:hover {
   color: #fafafa;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 64em) {
   .features__item .heading .feature-number {
     width: 5rem;
     height: 2.5rem;
@@ -659,6 +762,12 @@ a, a:visited, a:hover {
 
 @media (min-width: 40em) {
   .features__item .heading .benefit {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 64em) {
+  .features__item .heading .benefit {
     margin-left: 2rem;
     font-size: 19px;
     margin-bottom: 2rem;
@@ -673,6 +782,15 @@ a, a:visited, a:hover {
 
 @media (min-width: 40em) {
   .features__item .details {
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.6;
+  }
+}
+
+@media (min-width: 64em) {
+  .features__item .details {
+    text-align: left;
     font-size: 17px;
     margin-left: 7rem;
     margin-top: -0.5rem;
@@ -1097,6 +1215,13 @@ a, a:visited, a:hover {
       align-self: center;
   width: 67vw;
   height: 3rem;
+}
+
+@media (min-width: 40em) {
+  .footer__cta .input {
+    border: none;
+    width: 60vw;
+  }
 }
 
 @media (min-width: 64em) {

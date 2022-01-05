@@ -21,14 +21,27 @@
             margin-top: -20.8rem;
 
             @include breakpoint-up(medium){
+                display: none;               
+            }
+
+
+            @include breakpoint-up(large){
                 display:none;
             }
+
             }
 
     &__wrapper{
 
         position: relative;
-        @include breakpoint-up(medium){
+
+        @include breakpoint-up(medium){     
+            display:block;
+            display: flex;
+        }
+
+
+        @include breakpoint-up(large){
         
             display: flex;
             justify-content: center;
@@ -38,8 +51,12 @@
     }
 
     &__text{
-        
+
         @include breakpoint-up(medium){
+            order: 1;            
+        }
+        
+        @include breakpoint-up(large){
             order: 1;
             
         }
@@ -50,7 +67,11 @@
             text-align: center;
             font-size: 35px;
 
-            @include breakpoint-up(medium){
+            @include breakpoint-up(medium){     
+                text-align: left;
+            }
+
+            @include breakpoint-up(large){
                 text-align: left;
                 font-size: 3.5rem;
             }
@@ -62,7 +83,12 @@
             line-height: 1.5;
             font-size: 16px;
 
-            @include breakpoint-up(medium){
+            @include breakpoint-up(medium){     
+                text-align: left;
+                width: 70%;
+            }
+
+            @include breakpoint-up(large){
                 text-align: left;
                 margin-top: -1.5rem;
                 width:80%;
@@ -75,7 +101,12 @@
             text-align: center;
             margin-top:50px;
 
+
             @include breakpoint-up(medium){
+                text-align: left;
+            }
+
+            @include breakpoint-up(large){
                 text-align: left;
             }
              
@@ -84,7 +115,7 @@
              font-size: 10px;
              box-shadow:  0px 12px 13px -10px $brightRed;
      
-             @include breakpoint-up(medium){
+             @include breakpoint-up(large){
                  padding: 0.9rem 2.3rem;
                  font-size: 15px;
              }
@@ -103,8 +134,14 @@
         background-position: top 1rem center;
         margin-top:-2rem;
 
-
         @include breakpoint-up(medium){
+            order: 2;
+            background-size: 85%;
+            background-position: top 3rem right 4rem;
+        }
+
+
+        @include breakpoint-up(large){
             order: 2;
             margin-top: 2rem;
             width:140%;

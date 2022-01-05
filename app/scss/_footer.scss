@@ -196,6 +196,11 @@
             width: 67vw;
             height: 3rem;
 
+            @include breakpoint-up(medium){
+                border: none;
+                width: 60vw;
+            }
+
             @include breakpoint-up(large){
                 max-width: 1440px;   
                 width: 11vw;
@@ -204,7 +209,6 @@
 
        
         }
-
 
 
         a{

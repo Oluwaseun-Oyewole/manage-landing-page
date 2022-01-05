@@ -5,13 +5,16 @@
     position: relative;
 
     @include breakpoint-up(medium){
+        padding-right: 3rem;
+    }
+    
+    @include breakpoint-up(large){
         margin-top: -2rem;
         padding-left: 3rem;
         padding-right:3rem;
     }
 
-
-        @include breakpoint-up(medium){
+    @include breakpoint-up(large){
             &::before{
                 content: "";
                 position: absolute;
@@ -28,24 +31,25 @@
                 left:0%;
                 top: 10%;
             }
-        }
+    }
         
-
-
-
    &__wrapper{       
-    @include breakpoint-up(medium){
+    @include breakpoint-up(large){
         display: flex;
         justify-content: center;
         padding:10rem 6rem 0 6rem;
     }
-
-
    }
 
    &__list{
 
     @include breakpoint-up(medium){
+            display: flex;
+            gap:2rem;
+    }
+
+    @include breakpoint-up(large){
+        display: block;
         flex: 1;
         // padding-left: 7rem;
     }
@@ -59,7 +63,7 @@
         padding-right: 3rem;
 
 
-        @include breakpoint-up(medium){
+        @include breakpoint-up(large){
            margin-top: -2rem;
         }
 
@@ -68,9 +72,13 @@
             font-size: 2rem;
 
             @include breakpoint-up(medium){
-                font-size: 41px;
+                padding: 0 5rem;
             }
 
+            @include breakpoint-up(large){
+                padding: 0;
+                font-size: 41px;
+            }
 
         }
         
@@ -81,12 +89,17 @@
             color: $darkGrayishBlue;
 
             @include breakpoint-up(medium){
+                padding: 0 4rem;
+            }
+
+            @include breakpoint-up(large){
+                padding: 0;
                 width: 70%;
                 font-size: 17px;
             }
         }
 
-        @include breakpoint-up(medium){
+        @include breakpoint-up(large){
             flex: 1;
             text-align: left;
         }
@@ -94,8 +107,6 @@
 
     &__item{
         padding-bottom: 2.5rem;
-
-
         .heading{
 
             display: flex;
@@ -109,7 +120,7 @@
             margin: 0;
            }
 
-           @include breakpoint-up(medium){
+           @include breakpoint-up(large){
                background: transparent;
                align-items: center;
            }
@@ -129,7 +140,7 @@
             color: #fafafa;
 
 
-            @include breakpoint-up(medium){
+            @include breakpoint-up(large){
 
                 width: 5rem;
                 height: 2.5rem;
@@ -152,8 +163,11 @@
             margin-left: 1rem;
             font-size: 14px;
 
-            
             @include breakpoint-up(medium){
+                font-size: 10px;
+            }
+            
+            @include breakpoint-up(large){
                 margin-left: 2rem;
                 font-size: 19px;
                 margin-bottom: 2rem;
@@ -170,6 +184,14 @@
 
 
             @include breakpoint-up(medium){
+                text-align: center;
+                font-size: 12px;
+                line-height:1.6;
+            }
+
+
+            @include breakpoint-up(large){
+                text-align: left;
                 font-size: 17px;
                 margin-left: 7rem;
                 margin-top: -0.5rem;
