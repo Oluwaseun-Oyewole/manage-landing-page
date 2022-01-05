@@ -1,0 +1,61 @@
+.extra{
+
+    text-align: center;
+    background: $brightRed;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 4rem;
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+
+
+    @include breakpoint-up(large){
+        margin-top: 12rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        text-align:left;
+
+
+ 
+        max-width: 1440px;
+        margin: 0 auto;
+
+        padding: 2rem 8rem;
+    
+    }
+
+   
+    >div{
+        margin-top: 2rem;
+
+        @include breakpoint-up(large){
+            display:flex;
+            justify-content: space-around;
+            justify-content: space-between;
+            align-items: center;
+
+            h1{
+                width: 40%;
+                font-size: 40px;
+            }
+        
+        }
+    
+    }
+
+    a{
+        background: $veryLightGray;
+        color: $brightRed;
+        padding: 0.7rem 2rem;
+    }
+
+    h1{
+        color:$white;
+        font-size: 2rem;
+        line-height: 1.4;
+        padding-bottom: 1rem;
+    }
+
+   
+}

@@ -1,3 +1,6 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap");
+
 html{
     font-size:100%;
     box-sizing: border-box;
@@ -10,11 +13,28 @@ html{
 body{
     padding:0;
     margin:0;
-    font-family: 'Public Sans', sans-serif;
+
+    font-family: "Be Vietnam", sans-serif;
     line-height: 1.3 ;
     font-size: $font-sm;
     color:$darkBlue;
     font-weight: 300;
+
+    max-width: 1440px;
+    margin: 0 auto;
+
+    // width: 375px;
+    // margin:0 auto;
+    // max-width: 375px;
+
+    @include breakpoint-up(large){
+       
+        max-width: 1440px;
+        margin:0 auto;
+    }
+
+
+    box-shadow:  3px 3px 5px 6px #ccc;;
 }
 
 
@@ -22,8 +42,31 @@ a, a:visited, a:hover{
     text-decoration: none;
 }
 
+.container{
+    
+    &--pall{
+    padding-top:3rem;
+    padding-left: 7.5rem;
+    padding-right: 7.5rem;
+    }
+
+    &--plr{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    &--pt{
+        padding-top: 4rem;
+    }
+
+    &--ptt{
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+}
+
 
 .button{
+    position: relative;
     border:0;
     outline: 0;
     border-radius: 50px;
@@ -32,7 +75,7 @@ a, a:visited, a:hover{
     color:$white;
     font-size: $font-xsm;
 
-    padding:0.875rem 2.285rem;
+    padding:0.995rem 2.285rem;
     font-weight:600;
 
 }
@@ -66,4 +109,12 @@ a, a:visited, a:hover{
         align-items: center;
     }
 } 
+
+.has-fade{
+    visibility:hidden;
+}
+
+.noscroll{
+    overflow:hidden;
+}
 

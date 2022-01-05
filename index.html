@@ -21,14 +21,14 @@
 </head>
 <body>
   
-  <header class="header">
+  <header class="header container--pall">
+    <div class="overlay has-fade hide-for-desktop"></div>
       <nav class="nav flex flex-jc-sb flex-ai-c">
           <a href="#" class="header__logo">
               <img src="./images/logo.svg" alt="logo">
           </a>
 
-          <a href="#" class="header__hambugger hide-for-desktop">
-
+          <a href="#" class="header__toggle hide-for-desktop" id="btnHambugger">
               <span></span>
               <span></span>
               <span></span>
@@ -44,84 +44,234 @@
 
           <a href="#" class="button header__cta hide-for-mobile">Get Started</a>
       </nav>
+
+      <div class="header__menu has-fade hide-for-desktop">
+        <a href="#">Pricing</a>
+        <a href="#"> Product</a>
+        <a href="#">About Us</a>
+        <a href="#">Careers</a>
+        <a href="#">Community</a>
+    </div>
+
   </header>
 
-  <!-- Pricing
-  Product
-  About Us
-  Careers
-  Community
+  <section class="hero container--pall">
+    <div class="hero__image  ">
+        
+    </div>
 
-  Get Started
+    <div class="hero__text">
+      <h1>Bring everyone together to build better products.</h1>
+      
+      <p class="">Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
 
-  Bring everyone together to build better products.
+      <div class="header__cta hero__cta">
+        <a href="#" class="button hero__cta" >Get started</a>
+      </div>
+    </div>
+  </section>
 
-  Manage makes it simple for software teams to plan day-to-day 
-  tasks while keeping the larger team goals in view.
 
-  Get Started
+  <section class="features">
+    <div class="container">
+      <div class="features__wrapper">
+        
+        <div class="features__text">
+          <h1>What's different about Manage?</h1>
+          <p>
+            Manage provides all the functionality your team needs, without the
+            complexity. Our software is tailor-made for modern digital product
+            teams.
+          </p>
+        </div>
 
-  What’s different about Manage?
+        <div class="features__list">
+          <div class="features__item">
+                <div class="heading">
+                  <h3 class="feature-number">01</h3>
+                  <h3 class="benefit">Track company-wide progress</h3>
+                </div>
+                <p class="details">
+                  See how your day-to-day tasks fit into the wider vision. Go from
+                  tracking progress at the milestone level all the way done to the
+                  smallest of details. Never lose sight of the bigger picture
+                  again.
+                </p>
+          </div>
 
-  Manage provides all the functionality your team needs, without 
-  the complexity. Our software is tailor-made for modern digital 
-  product teams. 
 
-  01
-  Track company-wide progress
-  See how your day-to-day tasks fit into the wider vision. Go from 
-  tracking progress at the milestone level all the way done to the 
-  smallest of details. Never lose sight of the bigger picture again.
+          <div class="features__item">
+            <div class="heading">
+              <h3 class="feature-number">02</h3>
+              <h3 class="benefit">Advanced built-in reports</h3>
+            </div>
+            <p class="details">
+              Set internal delivery estimates and track progress toward
+              company goals. Our customisable dashboard helps you build out
+              the reports you need to keep key stakeholders informed.
+            </p>
+          </div>
+          <div class="features__item">
+            <div class="heading">
+              <h3 class="feature-number">03</h3>
+              <h3 class="benefit">Everything you need in one place</h3>
+            </div>
+            <p class="details">
+              Stop jumping from one service to another to communicate, store
+              files, track tasks and share documents. Manage offers an
+              all-in-one team productivity solution.
+            </p>
+          </div>
+        </div>
 
-  02
-  Advanced built-in reports
-  Set internal delivery estimates and track progress toward company 
-  goals. Our customisable dashboard helps you build out the reports 
-  you need to keep key stakeholders informed.
 
-  03
-  Everything you need in one place
-  Stop jumping from one service to another to communicate, store files, 
-  track tasks and share documents. Manage offers an all-in-one team 
-  productivity solution.
+      </div>
+    </div>
+  </section>
 
-  What they’ve said
+  <section class="review">
+      <div class="review__title">
+          <h1>What they've said</h1>
+      </div>
 
-  Anisha Li
-  “Manage has supercharged our team’s workflow. The ability to maintain 
-  visibility on larger milestones at all times keeps everyone motivated.”
+      <div class="review__description">
+          <div class="card card1 hide-for-mobile">
+              <img src="./images/avatar-ali.png" alt="" srcset="" class="card__image">
+              <div class="card__description">
+                <h3>Ali Bravo</h3>
+                <p>Ali Bravo
+                  “We have been able to cancel so many other subscriptions since using 
+                  Manage. There is no more cross-channel confusion and everyone is much 
+                  more focused.”</p>
 
-  Ali Bravo
-  “We have been able to cancel so many other subscriptions since using 
-  Manage. There is no more cross-channel confusion and everyone is much 
-  more focused.”
+              </div>
+          </div>
 
-  Richard Watts
-  “Manage allows us to provide structure and process. It keeps us organized 
-  and focused. I can’t stop recommending them to everyone I talk to!”
+          <div class="card card2 hide-for-mobile">
+              <img src="./images/avatar-anisha.png" alt="" srcset="" class="card__image">
+                <div class="card__description">
+                  <h3>Anisha Li</h3>
+                  <p>“Manage has supercharged our team’s workflow. The ability to maintain 
+                    visibility on larger milestones at all times keeps everyone motivated.”</p>
+                </div>
+          </div>
 
-  Shanai Gough
-  “Their software allows us to track, manage and collaborate on our projects 
-  from anywhere. It keeps the whole team in-sync without being intrusive.”
+          <div class="card card3 hide-for-mobile">
+              <img src="./images/avatar-richard.png" alt="" srcset="" class="card__image">
+              <div class="card__description">
+              <h3>Richard Watts</h3>
+              <p> “Manage allows us to provide structure and process. It keeps us organized 
+                and focused. I can’t stop recommending them to everyone I talk to!”</p>
+              </div>
+          </div>
+        
 
-  Get Started
+          <div class="card card4 hide-for-desktop ">
+            <img src="./images/avatar-ali.png" alt="" srcset="" class="card__image">
+            <div class="card__descriptions">
+              <h3>Ali Bravo</h3>
+              <p>Ali Bravo
+                “We have been able to cancel so many other subscriptions since using 
+                Manage. There is no more cross-channel confusion and everyone is much 
+                more focused.”</p>
 
-  Simplify how your team works today.
-  Get Started
+            </div>
+         </div>
 
-  Home
-  Pricing
-  Products
-  About Us
-  Careers
-  Community
-  Privacy Policy
+      </div>
 
-  Updates in your inbox…
-  Go
 
-  Copyright 2020. All Rights Reserved -->
+      <div class="review__btn">
+        <a href="#" class="button header__cta">Get Started</a>
+      </div>
+  </section>
 
+    <section class="extra">
+              <div class="">
+                 <h1>Simplify how your team works today.</h1>    
+                  <a href="#" class="button header__cta">Get Started</a>
+              </div>
+    </section>
+
+<footer class="footer container--pt">
+
+    <div class="footer__cta">
+      <input type="text" placeholder="update your inbox" class="input">
+      <a href="#" class="button">
+      Go</a>
+    </div>
+
+    <div class="footer__links">
+
+     <div class="col1">
+      <a href="#">Home</a>
+      <a href="#">Pricing</a>
+      <a href="#">Product</a>
+      <a href="#">About Us</a>
+     </div>
+
+     <div class="col2">
+      <a href="#">Careers</a>
+      <a href="#">Community</a>
+      <a href="#">Privacy</a>
+     </div>
+    </div> 
+
+    <!-- <div class="footer__links col2">
+      <a href="#">Careers</a>
+      <a href="#">Community</a>
+      <a href="#">Privacy</a>
+
+    </div> -->
+
+    <div class="footer__socials">
+        <div class="icons">
+          <a href="#">
+            <img src="./images/icon-facebook.svg" alt="" srcset="">
+          </a>
+
+          <a href="#">
+            <img src="./images/icon-youtube.svg" alt="" srcset="">
+          </a>
+
+          <a href="#">
+            <img src="./images/icon-twitter.svg" alt="" srcset="">
+          </a>
+
+          <a href="#">
+            <img src="./images/icon-pinterest.svg" alt="" srcset="">
+          </a>
+
+          <a href="#">
+            <img src="./images/icon-instagram.svg" alt="" srcset="">
+          </a>
+        </div>
+
+
+        <div class="logo">
+          <a href="#" class="footer__logo">
+            <img src="images/logo-dark.svg" alt="logo image" srcset="">
+         </a>
+         </div>
+
+    </div>
+    
+
+    <div class="footer__copyright">
+      &copy; Copyright 2020. All Rights Reserved
+    </div>
+
+    <div class="footer__round">
+      <a href="#" class="one"></a>
+      <a href="#" class="two"></a>
+      <a href="#" class="three"></a>
+      <a href="#" class="four"></a>
+    </div>
+   
+
+
+</footer>
+  
   
       <!-- <div class="attribution" style="margin-top:15px">
         Coded by <a href="#">Olúwáṣeun Oyèwọlé

@@ -1,0 +1,152 @@
+.features{
+    // margin: 0px -1.4rem 0px -1rem;
+    padding-left: 1rem;
+
+   &__wrapper{
+       
+    @include breakpoint-up(large){
+        display: flex;
+        justify-content: center;
+        padding:10rem 6rem 0 6rem;
+    }
+
+
+   }
+
+   &__list{
+
+    @include breakpoint-up(large){
+        flex: 1;
+        // padding-left: 7rem;
+    }
+
+   }
+
+
+    &__text{
+        text-align: center;
+        padding-bottom: 3rem;
+
+
+        @include breakpoint-up(large){
+           margin-top: -2rem;
+        }
+
+
+        h1{
+            font-size: 2rem;
+
+            @include breakpoint-up(large){
+                font-size: 41px;
+            }
+
+
+        }
+        
+        p{
+            color: $darkGrayishBlue;
+            font-size: 15px;
+            line-height: 1.7;
+            color: $darkGrayishBlue;
+
+            @include breakpoint-up(large){
+                width: 70%;
+                font-size: 17px;
+            }
+        }
+
+        @include breakpoint-up(large){
+            flex: 1;
+            text-align: left;
+        }
+    }
+
+    &__item{
+        padding-bottom: 2.5rem;
+
+
+        .heading{
+
+            display: flex;
+            align-items: center;
+            background: #fff0ec;
+   
+           border-radius:2.5rem 0 0 2.5rem;
+       
+           >h3{
+            padding: 0;
+            margin: 0;
+           }
+
+           @include breakpoint-up(large){
+               background: transparent;
+               align-items: center;
+           }
+
+           .feature-number{ 
+
+
+            width: 3.5rem;
+            height: 2.1rem;
+            text-align: center;
+            line-height: 2.4;
+            font-size: 0.8rem;
+            font-weight: 400;
+            border-radius: 2.5rem;
+            border: 1px solid #f25f3a;
+            background: #f25f3a;
+            color: #fafafa;
+
+
+            @include breakpoint-up(large){
+
+                width: 5rem;
+                height: 2.5rem;
+                text-align: center;
+                line-height: 1.8;
+                font-size: 1.2rem;
+                font-weight: 400;
+                border-radius: 2.5rem;
+                border: 1px solid #f25f3a;
+                background: #f25f3a;
+                color: #fafafa;
+
+            }
+
+
+           }
+
+
+           .benefit{
+            margin-left: 1rem;
+            font-size: 14px;
+            background: #fff0ec;
+
+            
+            @include breakpoint-up(large){
+                margin-left: 2rem;
+                font-size: 17px;
+            }
+
+           }
+
+        }
+
+        .details{
+            color:$darkGrayishBlue;
+            font-size: 14px;
+            line-height: 1.8;
+
+
+            @include breakpoint-up(large){
+                font-size: 17px;
+                margin-left: 7rem;
+                margin-top: -0.5rem;
+            }
+
+
+        }
+   
+
+    }
+}
