@@ -44,11 +44,15 @@
    &__list{
 
     @include breakpoint-up(medium){
-            display: flex;
-            gap:2rem;
+            display:block;
+            
+            width: 70%;
+            transform:translateX(20%)
     }
 
     @include breakpoint-up(large){
+        width: 100%;
+        transform:translateX(0%);
         display: block;
         flex: 1;
         // padding-left: 7rem;
@@ -90,6 +94,9 @@
 
             @include breakpoint-up(medium){
                 padding: 0 4rem;
+                
+                width: 85%;
+                transform: translateX(10%);
             }
 
             @include breakpoint-up(large){
