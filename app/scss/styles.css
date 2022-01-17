@@ -226,7 +226,7 @@
 @-webkit-keyframes mobilefadeOut {
   from {
     opacity: 1;
-    top: 10rem;
+    top: 10.5rem;
   }
   to {
     opacity: 0;
@@ -237,7 +237,7 @@
 @keyframes mobilefadeOut {
   from {
     opacity: 1;
-    top: 10rem;
+    top: 10.5rem;
   }
   to {
     opacity: 0;

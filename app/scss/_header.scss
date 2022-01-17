@@ -126,10 +126,14 @@
     }
 
     &__menu{
+        // opacity:0;
+        // visibility:hidden;
 
         
         @include breakpoint-down(medium){
             opacity:0;
+
+            // visibility:hidden;
             background:$white;
             padding: 1.625rem;
             padding:1.625rem; 
