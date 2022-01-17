@@ -1,6 +1,5 @@
 
 .hero{
-    
 
     @include breakpoint-up(large){
         padding-left: 7rem;
@@ -124,36 +123,9 @@
      
 
     }
-   &__image{
-        background:url('/images/illustration-intro.svg');
-        min-height:20rem;
-        background-size: 90%;
-        background-repeat: no-repeat;
-        width: 100%;
-        background-position: top 1.4rem center;
-        margin-top:-1rem;
 
-        @include breakpoint-up(medium){
-            order: 2;
-            background-size: 85%;
-            background-position: top 3rem right 4rem;
-        }
-
-
-        @include breakpoint-up(large){
-            order: 2;
-            margin-top: 2rem;
-            width:140%;
-            background-size: 85%;
-            width: 140%;
-            height: 30rem;
-            background-position: top right 1rem ;
-        }
-    }
 
     &__image{
-        
-       
         background:url('/images/illustration-intro.svg');
         min-height:20rem;
         background-size: 90%;

@@ -109,14 +109,19 @@
     }
 
     .overlay{
-        opacity:0;
-        background: linear-gradient( $darkBlue, transparent);
-        position:fixed;
-        // top:5.5rem;
-        top:14%;
-        left:0;
-        right:0;
-        bottom:0;
+        @include breakpoint-down(medium){
+            opacity: 0;
+            // display: none;
+        
+            background: linear-gradient($darkBlue, transparent);
+            position: fixed;
+            top: 20%;
+            left: 0;
+            bottom: 0;
+            right: 0;
+
+            z-index:1;
+        }
     
     }
 
@@ -136,6 +141,7 @@
             transform: translateX(-50%);
         
             margin-top: 1.5rem;
+            z-index:1;
         
             a{
                 font-size:1.5rem;

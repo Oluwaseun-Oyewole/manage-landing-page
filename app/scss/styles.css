@@ -94,15 +94,18 @@
   opacity: 0.75;
 }
 
-.header .overlay {
-  opacity: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#242d52), to(transparent));
-  background: linear-gradient(#242d52, transparent);
-  position: fixed;
-  top: 14%;
-  left: 0;
-  right: 0;
-  bottom: 0;
+@media (max-width: 63.9375em) {
+  .header .overlay {
+    opacity: 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(#242d52), to(transparent));
+    background: linear-gradient(#242d52, transparent);
+    position: fixed;
+    top: 20%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+  }
 }
 
 @media (max-width: 63.9375em) {
@@ -118,6 +121,7 @@
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     margin-top: 1.5rem;
+    z-index: 1;
   }
   .header__menu a {
     font-size: 1.5rem;
@@ -551,40 +555,6 @@ a, a:visited, a:hover {
   .hero__cta a {
     padding: 0.9rem 2.3rem;
     font-size: 15px;
-  }
-}
-
-.hero__image {
-  background: url("/images/illustration-intro.svg");
-  min-height: 20rem;
-  background-size: 90%;
-  background-repeat: no-repeat;
-  width: 100%;
-  background-position: top 1.4rem center;
-  margin-top: -1rem;
-}
-
-@media (min-width: 40em) {
-  .hero__image {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    background-size: 85%;
-    background-position: top 3rem right 4rem;
-  }
-}
-
-@media (min-width: 64em) {
-  .hero__image {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    margin-top: 2rem;
-    width: 140%;
-    background-size: 85%;
-    width: 140%;
-    height: 30rem;
-    background-position: top right 1rem;
   }
 }
 
