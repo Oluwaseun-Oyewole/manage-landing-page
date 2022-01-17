@@ -16,6 +16,7 @@
         z-index: 1;
 
 
+
         .header__toggle{
               >span:first-child{
                   transform: rotate(45deg);
@@ -36,9 +37,7 @@
     nav{
 
         position:relative;
-        // background:$white; 
-       
-         
+        // background:$white;        
     }
 
     &__logo{
@@ -50,6 +49,7 @@
 
     &__toggle{
 
+        cursor:pointer;
         position: absolute;
         z-index: 1;
         left: 88%;
@@ -113,7 +113,7 @@
         background: linear-gradient( $darkBlue, transparent);
         position:fixed;
         // top:5.5rem;
-        top:0;
+        top:14%;
         left:0;
         right:0;
         bottom:0;
@@ -121,31 +121,42 @@
     }
 
     &__menu{
+
+        
+        @include breakpoint-down(medium){
+            opacity:0;
+            background:$white;
+            padding: 1.625rem;
+            padding:1.625rem; 
+            border-radius: 5px;
+        
+            position: absolute;
+            width: calc(100% - 3rem);
+            left: 50%;
+            transform: translateX(-50%);
+        
+            margin-top: 1.5rem;
+        
+            a{
+                font-size:1.5rem;
+                color:$darkBlue;
+                padding:0.625rem;
+                display: block;
+                text-align: center;
+        
+                position: relative;
+                // opacity:0;
+        
+                &:hover{
+                    color:$darkGrayishBlue;
+                    transition:all 400ms ease-in-out;
+                }
+        
+        
+            }
     
-        background: $white;
-        padding: 1.625rem;
-        border-radius: 5px;
-        position:absolute;
-
-        width:calc(100% - 4rem);
-        left:50%;
-        transform: translateX(-50%);
-
-        margin-top: 1.5rem;
-        animation: testing 500ms ease-in-out forwards;
-
-        a{
-            display: block;
-            text-align: center;
-            font-size: 1.05rem;
-            color:$darkBlue;
-            font-weight: 600;
-            padding: 0.625rem;
-            height: 48px;   
-            
-            animation: testing 500ms ease-in-out forwards;
         }
-
+    
     }
  
 }

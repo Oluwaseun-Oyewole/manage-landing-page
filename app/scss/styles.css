@@ -39,6 +39,7 @@
 }
 
 .header__toggle {
+  cursor: pointer;
   position: absolute;
   z-index: 1;
   left: 88%;
@@ -98,136 +99,151 @@
   background: -webkit-gradient(linear, left top, left bottom, from(#242d52), to(transparent));
   background: linear-gradient(#242d52, transparent);
   position: fixed;
-  top: 0;
+  top: 14%;
   left: 0;
   right: 0;
   bottom: 0;
 }
 
-.header__menu {
-  background: #ffffff;
-  padding: 1.625rem;
-  border-radius: 5px;
-  position: absolute;
-  width: calc(100% - 4rem);
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  margin-top: 1.5rem;
-  -webkit-animation: testing 500ms ease-in-out forwards;
-          animation: testing 500ms ease-in-out forwards;
-}
-
-.header__menu a {
-  display: block;
-  text-align: center;
-  font-size: 1.05rem;
-  color: #242d52;
-  font-weight: 600;
-  padding: 0.625rem;
-  height: 48px;
-  -webkit-animation: testing 500ms ease-in-out forwards;
-          animation: testing 500ms ease-in-out forwards;
+@media (max-width: 63.9375em) {
+  .header__menu {
+    opacity: 0;
+    background: #ffffff;
+    padding: 1.625rem;
+    padding: 1.625rem;
+    border-radius: 5px;
+    position: absolute;
+    width: calc(100% - 3rem);
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin-top: 1.5rem;
+  }
+  .header__menu a {
+    font-size: 1.5rem;
+    color: #242d52;
+    padding: 0.625rem;
+    display: block;
+    text-align: center;
+    position: relative;
+  }
+  .header__menu a:hover {
+    color: #9095a7;
+    -webkit-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
+  }
 }
 
 @-webkit-keyframes fade-in {
   from {
-    visibility: hidden;
     opacity: 0;
-  }
-  1% {
     visibility: hidden;
-    opacity: 0;
   }
   to {
-    visibility: visible;
     opacity: 1;
+    visibility: visible;
   }
 }
 
 @keyframes fade-in {
   from {
-    visibility: hidden;
     opacity: 0;
-  }
-  1% {
     visibility: hidden;
-    opacity: 0;
   }
   to {
-    visibility: visible;
     opacity: 1;
+    visibility: visible;
   }
 }
 
 .fade-in {
-  -webkit-animation: fade-in 300ms ease-in-out forwards;
-          animation: fade-in 300ms ease-in-out forwards;
+  -webkit-animation: fade-in 1s ease-in-out forwards;
+          animation: fade-in 1s ease-in-out forwards;
 }
 
 @-webkit-keyframes fade-out {
   from {
-    visibility: visible;
     opacity: 1;
-  }
-  1% {
     visibility: visible;
-    opacity: 1;
   }
   to {
-    visibility: hidden;
     opacity: 0;
+    visibility: hidden;
   }
 }
 
 @keyframes fade-out {
   from {
-    visibility: visible;
     opacity: 1;
-  }
-  1% {
     visibility: visible;
-    opacity: 1;
   }
   to {
-    visibility: hidden;
     opacity: 0;
+    visibility: hidden;
   }
 }
 
 .fade-out {
-  -webkit-animation: fade-out 300ms ease-in-out forwards;
-          animation: fade-out 300ms ease-in-out forwards;
+  -webkit-animation: fade-out 1s ease-in-out forwards;
+          animation: fade-out 1s ease-in-out forwards;
 }
 
-@-webkit-keyframes testing {
+.has-fade {
+  visibility: hidden;
+}
+
+@-webkit-keyframes mobilefadeIn {
   from {
     opacity: 0;
-  }
-  25% {
-    opacity: 0.5;
-  }
-  50% {
-    opacity: 0.7;
+    top: -1rem;
   }
   to {
     opacity: 1;
+    top: 10rem;
   }
 }
 
-@keyframes testing {
+@keyframes mobilefadeIn {
   from {
     opacity: 0;
-  }
-  25% {
-    opacity: 0.5;
-  }
-  50% {
-    opacity: 0.7;
+    top: -1rem;
   }
   to {
     opacity: 1;
+    top: 10rem;
   }
+}
+
+.mobile-fadeIn {
+  -webkit-animation: mobilefadeIn 1s ease-in-out forwards;
+          animation: mobilefadeIn 1s ease-in-out forwards;
+}
+
+@-webkit-keyframes mobilefadeOut {
+  from {
+    opacity: 1;
+    top: 10rem;
+  }
+  to {
+    opacity: 0;
+    top: -1em;
+  }
+}
+
+@keyframes mobilefadeOut {
+  from {
+    opacity: 1;
+    top: 10rem;
+  }
+  to {
+    opacity: 0;
+    top: -1em;
+  }
+}
+
+.mobile-fadeOut {
+  -webkit-animation: mobilefadeOut 1s ease-in-out;
+          animation: mobilefadeOut 1s ease-in-out;
 }
 
 html {
@@ -535,6 +551,40 @@ a, a:visited, a:hover {
   .hero__cta a {
     padding: 0.9rem 2.3rem;
     font-size: 15px;
+  }
+}
+
+.hero__image {
+  background: url("/images/illustration-intro.svg");
+  min-height: 20rem;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: top 1.4rem center;
+  margin-top: -1rem;
+}
+
+@media (min-width: 40em) {
+  .hero__image {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    background-size: 85%;
+    background-position: top 3rem right 4rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .hero__image {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-top: 2rem;
+    width: 140%;
+    background-size: 85%;
+    width: 140%;
+    height: 30rem;
+    background-position: top right 1rem;
   }
 }
 
