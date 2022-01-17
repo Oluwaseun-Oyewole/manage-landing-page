@@ -100,7 +100,7 @@
     background: -webkit-gradient(linear, left top, left bottom, from(#242d52), to(transparent));
     background: linear-gradient(#242d52, transparent);
     position: fixed;
-    top: 20%;
+    top: 10%;
     left: 0;
     bottom: 0;
     right: 0;
